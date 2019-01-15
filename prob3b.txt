@@ -1,0 +1,20 @@
+; Use semi-colons for commenting
+; This is an example input file to prove that socrates is mortal.
+
+(declarations
+  ; Enter in any sort, function, predicate, and constant declarations in here
+  (Boolean A Object)
+  (Boolean B Object)
+  (Boolean C Object
+)
+
+(premises
+  ; Enter in premises in here
+  (forAll x (implies (A x) (B x)))
+  (forAll x (implies (not (A x)) (C x)))
+)
+
+(goal
+  ; what we're trying to prove
+  (forAll x (implies (not (B x)) (not (C x))))
+)
